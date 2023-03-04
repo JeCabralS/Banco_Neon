@@ -6,6 +6,20 @@
     border-radius: 8px;
     padding: 3.7rem 3.2rem 2.3rem 3.2rem;
     .user {
-        @include flex(row, center, space-between)
+        @include flex(row, center, space-between);
+        margin-bottom: 2.1rem;
+        strong {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $gray-500;
+        }
+    }
+    p {
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: $gray-400;
     }
 }
