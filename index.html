@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./scss/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -151,8 +155,155 @@
             </ul>
             <a class="btn" href="">Conheça nossos produtos</a>
           </div>
+          <div class="box-card">
+            <div class="text">
+              <h2>Neon Pejota</h2>
+              <h3>Contas digitais PJ gratuitas para decolar seu negócio!</h3>
+              <p>
+                As melhores contas para fazer pagamentos, compras e receber dos
+                seus clientes.
+              </p>
+              <div class="btns">
+                <button class="btn-primary">Sou Mei</button>
+                <button class="btn-primary">Sou Me</button>
+              </div>
+            </div>
+            <img src="./img/card-front-pj.svg" class="image" alt="" />
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="s-depoimentos">
+      <div class="container">
+        <div class="top">
+          <h2>
+            <span>Prático, fácil, moderno</span> Você resolve tudo sem estresse
+            😊
+          </h2>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="slide-depoimentos">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-depoimentos">
+                <div class="user">
+                  <strong>@JeffersonCabral</strong>
+                  <img src="./img/twitter.svg" alt="" />
+                </div>
+                <p>
+                  Valeu @banconenon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #bancoNeon.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-depoimentos">
+                <div class="user">
+                  <strong>@JeffersonCabral</strong>
+                  <img src="./img/twitter.svg" alt="" />
+                </div>
+                <p>
+                  Valeu @banconenon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #bancoNeon.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-depoimentos">
+                <div class="user">
+                  <strong>@JeffersonCabral</strong>
+                  <img src="./img/twitter.svg" alt="" />
+                </div>
+                <p>
+                  Valeu @banconenon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #bancoNeon.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-depoimentos">
+                <div class="user">
+                  <strong>@JeffersonCabral</strong>
+                  <img src="./img/twitter.svg" alt="" />
+                </div>
+                <p>
+                  Valeu @banconenon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #bancoNeon.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-depoimentos">
+                <div class="user">
+                  <strong>@JeffersonCabral</strong>
+                  <img src="./img/twitter.svg" alt="" />
+                </div>
+                <p>
+                  Valeu @banconenon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #bancoNeon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-conta-digital">
+      <div class="container">
+        <div class="text">
+          <h2>
+            <span>Aproveite</span>Domine seu dinheiro com uma conta 100% digital
+          </h2>
+          <ul>
+            <li>
+              <div class="icon">
+                <img src="./img/icon-cartao-internacional.svg" alt="" />
+              </div>
+              <div class="info">
+                <h4>Cartão visa internacional</h4>
+                <p>Tenha facilidades e beneficios para o seu dia a dia.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon"><img src="./img/icon-conta.svg" alt="" /></div>
+              <div class="info">
+                <h4>Zero mensalidade e anuidade</h4>
+                <p>Não gaste grana pagando taxas desnecessárias.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="./img/icon-dinheiro.svg" alt="" />
+              </div>
+              <div class="info">
+                <h4>Investimento que rende mais que a poupança</h4>
+                <p>Invista o seu dinheiro de maneira mais rentável.</p>
+              </div>
+            </li>
+          </ul>
+          <button class="btn-primary">Abra sua conta digital</button>
+        </div>
+        <div class="image">
+          <img class="mockup-01" src="./img/mockup-cash-digital-01.svg" alt="">
+          <img class="mockup-02" src="./img/mockup-cash-digital-02.png" alt="">
+          <img class="circle" src="./img/circle-cash-digital.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".slide-depoimentos", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".s-depoimentos .container .top .swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
