@@ -32,6 +32,9 @@
             <li><a href="">Ajuda</a></li>
           </ul>
           <button class="btn-secondary white">Abra sua conta digital</button>
+          <button class="btn-mobile">
+            <img src="./img/menu-mobile.svg" alt="" />
+          </button>
         </nav>
       </div>
     </header>
@@ -47,19 +50,28 @@
               <div class="icon">
                 <img src="./img/icon-cartao-internacional.svg" alt="" />
               </div>
-              <span>Cartão sem<br />anuidade</span>
+              <span
+                >Cartão sem<br />
+                anuidade</span
+              >
             </li>
             <li>
               <div class="icon">
                 <img src="./img/icon-conta.svg" alt="" />
               </div>
-              <span>Conta digital<br />100% grátis</span>
+              <span
+                >Conta digital<br />
+                100% grátis</span
+              >
             </li>
             <li>
               <div class="icon">
                 <img src="./img/icon-dinheiro.svg" alt="" />
               </div>
-              <span>Seu dinheiro<br />rendendo mais</span>
+              <span
+                >Seu dinheiro<br />
+                rendendo mais</span
+              >
             </li>
           </ul>
         </div>
@@ -376,31 +388,34 @@
                 <li><a href="">Fale conosco</a></li>
               </ul>
             </div>
-          </nav> 
+          </nav>
           <div class="btns">
             <button>
-              <img src="./img/icon-envelope.svg" alt="">
+              <img src="./img/icon-envelope.svg" alt="" />
               <div class="info">
                 <strong>Atendimento</strong>
                 <span>oi@neon.com.br</span>
               </div>
             </button>
             <button>
-              <img src="./img/icon-chat.svg" alt="">
+              <img src="./img/icon-chat.svg" alt="" />
               <div class="info">
                 <strong>Imprensa</strong>
-                  <span>imprensa@neon.com.br</span>
+                <span>imprensa@neon.com.br</span>
               </div>
             </button>
           </div>
         </div>
         <div class="msg">
           <div class="icon">😀</div>
-          <p>Oi! Leu até aqui? Você se preocupa com os mínimos detalhes, mesmo. A gente também. Por isso o time Neon está sempre trabalhando para fazer a conta digital perfeita para você</p>
+          <p>
+            Oi! Leu até aqui? Você se preocupa com os mínimos detalhes, mesmo. A
+            gente também. Por isso o time Neon está sempre trabalhando para
+            fazer a conta digital perfeita para você
+          </p>
         </div>
       </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -411,6 +426,24 @@
         pagination: {
           el: ".s-depoimentos .container .top .swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          500: {
+            slidesPerView: 1.3,
+            spaceBetween: 16,
+          },
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 2.3,
+            spaceBetween: 15,
+          },
+        },
+        breakpoints: {
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
         },
       });
     </script>
