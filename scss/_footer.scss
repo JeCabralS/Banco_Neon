@@ -39,7 +39,7 @@ footer {
       .item {
         strong {
           display: inline-block;
-          font-family: 'Poppins', sans-serif;
+          font-family: "Poppins", sans-serif;
           font-weight: 600;
           font-size: 1.6rem;
           line-height: 125%;
@@ -109,6 +109,45 @@ footer {
       line-height: 150%;
       color: $brand-white;
       opacity: 0.8;
+    }
+  }
+
+  @include responsive(1050px) {
+    .main {
+      nav {
+        max-width: 76rem;
+      }
+    }
+  }
+  @include responsive(991px) {
+    .main {
+      width: 100%;
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .item {
+          width: 33%;
+          margin-bottom: 5rem;
+        }
+      }
+      .btns {
+        position: absolute;
+        bottom: 14rem;
+        right: 0;
+      }
+      .msg {
+        flex-direction: column;
+        align-items: center;
+        p {
+          margin-left: 0;
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
     }
   }
 }

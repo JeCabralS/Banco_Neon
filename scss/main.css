@@ -747,7 +747,7 @@ header .btn-mobile {
     content: " ";
     width: 100%;
     height: 21.4rem;
-    background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+    background: linear-gradient(180deg, #f7f7fa 0%, rgba(247, 247, 250, 0) 100%);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -951,6 +951,104 @@ header .btn-mobile {
   right: 0;
   bottom: 0;
 }
+@media (max-width: 1200px) {
+  .s-conta-digital .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-conta-digital .text {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-conta-digital .text h2 {
+    text-align: center;
+    max-width: 80%;
+  }
+  .s-conta-digital .image {
+    margin-right: 0;
+    left: 0;
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .s-conta-digital {
+    padding-top: 8.6rem;
+    padding-bottom: 8.1rem;
+  }
+  .s-conta-digital .text {
+    max-width: 100%;
+  }
+  .s-conta-digital .image {
+    max-width: 58.2rem;
+    height: 63.3rem;
+  }
+  .s-conta-digital .image img.circle {
+    width: 100%;
+  }
+  .s-conta-digital .image img.mockuo-01 {
+    z-index: 2;
+  }
+  .s-conta-digital .image img.mockuo-02 {
+    z-index: 2;
+  }
+}
+@media (max-width: 480px) {
+  .s-conta-digital {
+    padding-top: 5.7rem;
+    padding-bottom: 7.2rem;
+  }
+  .s-conta-digital .text h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    max-width: 100%;
+    margin-bottom: 3.9rem;
+  }
+  .s-conta-digital .text h2 span {
+    font-size: 2.4rem;
+  }
+  .s-conta-digital .text ul {
+    margin-bottom: 4.4rem;
+  }
+  .s-conta-digital .text ul li {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-conta-digital .text ul li:not(:last-child) {
+    margin-bottom: 5.6rem;
+  }
+  .s-conta-digital .text ul li .icon {
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
+  .s-conta-digital .text ul li .info h4 {
+    text-align: center;
+    max-width: 28rem;
+  }
+  .s-conta-digital .text ul li .info p {
+    text-align: center;
+    font-size: 1.4rem;
+    max-width: 21rem;
+    margin: 0 auto;
+  }
+  .s-conta-digital .image {
+    max-width: 35.7rem;
+    height: 46.9rem;
+  }
+  .s-conta-digital .image img.mockup-01, .s-conta-digital .image img.mockup-02 {
+    max-width: 16.8rem;
+  }
+  .s-conta-digital .image img.mockup-01 {
+    bottom: initial;
+    top: 5.8rem;
+  }
+  .s-conta-digital .image img.mockup-02 {
+    left: initial;
+    right: 0;
+    top: 0;
+  }
+}
 
 footer {
   background-color: #0073CE;
@@ -1066,4 +1164,40 @@ footer .msg p {
   line-height: 150%;
   color: #FFF;
   opacity: 0.8;
+}
+@media (max-width: 1050px) {
+  footer .main nav {
+    max-width: 76rem;
+  }
+}
+@media (max-width: 991px) {
+  footer .main {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .main nav {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .main nav .item {
+    width: 33%;
+    margin-bottom: 5rem;
+  }
+  footer .main .btns {
+    position: absolute;
+    bottom: 14rem;
+    right: 0;
+  }
+  footer .main .msg {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .main .msg p {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
